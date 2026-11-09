@@ -86,7 +86,13 @@ footer{margin-top:35px;color:#716981;font-size:11px;text-align:center}
 </main>
 </div>
 <div id="modalRoot"></div><div id="toastRoot"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 <script>
+const supabaseClient = window.supabase.createClient(
+  'https://rssjfnrkuzzfnezbcvsw.supabase.co',
+  'sb_publishable_LwU6-AbTYyib0pLPTgF2SQ_Ep7tukcY'
+);
 const seed = {
  volumes:[
  {id:'p0',label:'PROLOGUE',title:'The Age of the Unexplained',desc:'Bumi mulai mengalami kejadian mistis dan fenomena misterius yang tidak dapat dijelaskan. Kemunculan kasus di luar nalar mendorong terbentuknya agensi detektif swasta khusus untuk menyelidikinya.',status:'Ide',progress:0},
